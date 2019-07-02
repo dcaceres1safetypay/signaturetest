@@ -4,11 +4,44 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <body>
-    <table style="border:">
-      <tr>
-        <th>Element</th>
-        <th>Value</th>
+  <body style="
+    width: 100%;
+    margin: 0;
+    padding: 0;
+">
+    <table style="border:;/* border: 2px solid #08c; *//* border-radius: 5px; *//* overflow: auto; *//* font-family: proxima nova,open sans,sans-serif; *//* font-size: 15px; *//* color: #4c555a; *//* margin: 0; */margin-top: 0!important;width: 100%;border: 0;border-spacing: 0;">
+      <tbody style="
+    margin-top: 0!important;
+    width: 100%;
+"><tr style="
+    margin-top: 0!important;
+    padding: 5px 15px;
+    vertical-align: top;
+    font-size: 14px;
+    display: table-row;
+">
+        <th style="
+    margin-top: 0!important;
+    text-align: left;
+    padding: 5px 15px;
+    vertical-align: top;
+    font-size: 14px;
+    background-color: #08c!important;
+    color: #fff;
+    border: 2px solid #08c!important;
+    font-family: proxima nova,open sans,sans-serif;
+">Element</th>
+        <th style="
+    margin-top: 0!important;
+    text-align: left;
+    padding: 5px 15px;
+    vertical-align: top;
+    font-size: 14px;
+    background-color: #08c!important;
+    color: #fff;
+    border: 2px solid #08c!important;
+    font-family: proxima nova,open sans,sans-serif;
+">Value</th>
       </tr>
       <tr>
         <td><label>RequestDateTime</label></td>
@@ -27,7 +60,7 @@
         <td><label>Signature</label></td>
         <td><input id="Signature" type="" name=""></td>
       </tr>     
-    </table>
+    </tbody></table>
     <script type="text/javascript">
       function sha256(ascii) {
         function rightRotate(value, amount) {
@@ -131,5 +164,6 @@
       document.getElementById('Signature').value = sha256(document.getElementById('date').value.concat(document.getElementById('signaturek').value))
     }
   </script>
-  </body>
+  
+</body>
 </html>
